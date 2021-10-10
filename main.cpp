@@ -61,6 +61,7 @@ void InitializeComputer()
 
 			COMP_DATA.push_back(comp);
 			fileInput.getline(temp, 255);
+			
 			comp.id = temp;
 		}
 	}
