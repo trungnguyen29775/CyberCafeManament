@@ -242,11 +242,11 @@ void ComputerEntry::Menu()
             cin >> ws;
             getline(cin, choice);
             c = int(choice[0]) - 48;
-            if (c < 1 || c>6)
+            if (c < 1 || c>6 || choice.size()!=1)
             {
                 cout << "Invalid number!\n";
             }
-        } while (c < 1 || c>6);
+        } while (c < 1 || c>6 || choice.size()!=1);
 
 
         switch (c)

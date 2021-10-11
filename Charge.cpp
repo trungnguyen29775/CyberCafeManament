@@ -101,11 +101,11 @@ void Charge::menu()
 			cin >> ws;
 			getline(cin, choice);
 			c = int(choice[0]) - 48;
-			if (c < 1 || c>3)
+			if (c < 1 || c>3 || choice.size()!=1)
 			{
 				cout << "Invalid number!\n";
 			}
-		} while (c < 1 || c>3);
+		} while (c < 1 || c>3 || choice.size()!=1);
 
 
 		switch (c)

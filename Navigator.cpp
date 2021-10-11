@@ -46,11 +46,11 @@ void MasterMenu()
             cin >> ws;
             getline(cin, choice);
             c = int(choice[0]) - 48;
-            if (c < 1 || c > 3)
+            if (c < 1 || c>3 || choice.size()!=1)
             {
                 cout << "Invalid number!\n";
             }
-        } while (c < 1 || c > 3);
+        } while (c < 1 || c>3 || choice.size()!=1);
 
 
         switch (c)
@@ -96,11 +96,11 @@ void ManageMenu()
             cin >> ws;
             getline(cin, choice);
             c = int(choice[0]) - 48;
-            if (c < 1 || c > 4)
+            if (c < 1 || c>4 || choice.size()!=1)
             {
                 cout << "Invalid number!\n";
             }
-        } while (c < 1 || c > 4);
+        } while (c < 1 || c>4 || choice.size()!=1);
 
 
         switch (c)
@@ -140,11 +140,11 @@ void StartMenu()
             cin >> ws;
             getline(cin, choice);
             c = int(choice[0]) - 48;
-            if (c < 1 || c > 3)
+            if (c < 1 || c>4 || choice.size()!=1)
             {
                 cout << "Invalid number!\n";
             }
-        } while (c < 1 || c > 3);
+        } while (c < 1 || c>4 || choice.size()!=1);
 
         switch (c) //Handle choice
         {

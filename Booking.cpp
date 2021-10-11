@@ -298,11 +298,11 @@ void Booking::menu() //void menu to solve the Booking's Menu
             cin >> ws;
             getline(cin, choice);
             c = int(choice[0]) - 48;
-            if (c < 1 || c>4)
+            if (c < 1 || c>4 || choice.size()!=1)
             {
                 cout << "Invalid number!\n";
             }
-        } while (c < 1 || c>4);
+        } while (c < 1 || c>4 || choice.size()!=1);
 
 
         switch (c)
