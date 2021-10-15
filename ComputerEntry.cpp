@@ -1,7 +1,7 @@
 #include"ComputerEntry.h"
 
 vector <ComputerEntry> COMP_DATA;
-
+//todo
 ComputerEntry::ComputerEntry() {
     id = "";
     typeCPU = "";
