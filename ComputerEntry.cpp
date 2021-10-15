@@ -1,11 +1,10 @@
 #include"ComputerEntry.h"
 
 vector <ComputerEntry> COMP_DATA;
-//todo
 ComputerEntry::ComputerEntry() {
     id = "";
     typeCPU = "";
-    memory = "";
+    memory = ""; 
 }
 
 void ComputerEntry::outp(ComputerEntry& member, ofstream& file)
